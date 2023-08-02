@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+#background-box {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../imagens/backgroun-imperio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/*Cabeçalho*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 80px;
+}
+
+#box-logo {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    top: -10px;
+}
+
+
+#box-logo img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 10px;
+    top: 10px;
+}
+
+/* Container do formúlario */
+#container-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0, 0.8);
+    width: 450px;
+    height: 520px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin-top: 5vh;
+}
+
+/* titulo do formulario */
+#container-box h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* configuração do formúlario */
+#container-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* input e label */
+#container-form label, input {
+    margin: 5px 0;
+}
+
+#container-form label {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #F2E205;
+}
+
+#container-form input {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid grey;
+    color: #fff;
+    outline: none;
+}
+
+#container-form input:focus {
+    border-bottom: 1px solid #F2A007;
+}
+
+/* Esqueceu a senha */
+#forgot-password {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+
+}
+
+#forgot-password a {
+    text-decoration: none;
+    color: grey;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#forgot-password a:hover {
+    color: #F2A007;
+    transition: 0.5s;
+}
+
+/* botão de envio */
+#container-form input[type="submit"] {
+    background-color: #F2E205;
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 1.2s;
+}
+
+#container-form input[type="submit"]:hover {
+    background-color: grey;
+    color: #fff;
+    transition: 1.2s;
+}
+
+/* register-se */
+#register-box span, a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#register-box a {
+    color: grey;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+#register-box a:hover {
+    color: #F2A007;
+    transition: 0.5s;
+}
+
+/* footer */
+#box-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 12.5%;
+}
+
+#box-footer p, span {
+    color: white;
+    font-size: 16px;
+}
+
+#box-footer span {
+    color: #F2A007;
+}
+
+/* Resposinvidade */
+/* laptop width 1680 */
+
+@media (max-width: 1680px) {
+    #box-footer {
+        margin-top: 14.2%;
+    }
+}
+
+/* iPad width 1440 */
+@media (max-width: 1440px) {
+    #box-footer {
+        margin-top: 7%;
+    }
+}
+
+@media (max-width:1024px) {
+    header #box-logo img {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        top: 15px;
+    }
+
+    #container-box {
+        width: 380px;
+        height: 500px;
+    }
+    #container-box h1 {
+        font-size: 25px;
+    }
+    
+    #container-form label, input {
+        font-size: 14px;
+    }
+
+    #forgot-password a {
+        font-size: 14px;
+    }
+
+    #register-box span, a {
+        font-size: 14px;
+    }
+
+    #box-footer {
+        margin-top: 9.5%;
+    }
+}
+
+/* Smarthphone width 620 */
+@media (max-width: 620px) {
+    #box-footer {
+        display: none;
+    }
+}
+
+/* Smarthphone width 500 */
+@media (max-width: 500px) {
+    header #box-logo img {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        top: 15px;
+    }
+
+    #container-box {
+        margin-top: 2vh;
+        width: 320px;
+        height: 470px;
+    }
+    #container-box h1 {
+        font-size: 20px;
+    }
+    
+    #container-form label, input {
+        font-size: 12px;
+    }
+
+    #forgot-password a {
+        font-size: 12px;
+    }
+
+    #register-box span, a {
+        font-size: 12px;
+    }
+
+    #box-footer {
+        display: none;
+    }
+
+}
+
+
