@@ -239,14 +239,14 @@ header {
 @media (max-width: 500px) {
     header #box-logo img {
         position: relative;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 60px;
         top: 15px;
     }
 
     #container-box {
         margin-top: 2vh;
-        width: 320px;
+        width: 300px;
         height: 470px;
     }
     #container-box h1 {
