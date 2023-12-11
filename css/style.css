@@ -1,4 +1,7 @@
+/* Importação de fontes para o site */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* Resetando configuração padrões */
 * {
     margin: 0;
     padding: 0;
@@ -6,16 +9,18 @@
     font-family: 'Oswald', sans-serif;
 }
 
-#background-box {
+/* Configuraçao do background do site e do corpo*/
+body {
     width: 100vw;
     height: 100vh;
     background-image: url(../imagens/backgroun-imperio.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
 }
-/*Cabeçalho*/
 
+/*Cabeçalho*/
 header {
     display: flex;
     align-items: center;
@@ -24,6 +29,7 @@ header {
     height: 80px;
 }
 
+/* Container da logo do site */
 #box-logo {
     position: relative;
     width: 150px;
@@ -31,7 +37,7 @@ header {
     top: -10px;
 }
 
-
+/* Configuração da logo do site */
 #box-logo img {
     position: relative;
     width: 100px;
@@ -160,7 +166,7 @@ header {
     transition: 0.5s;
 }
 
-/* footer */
+/* rodapé do site */
 #box-footer {
     display: flex;
     justify-content: center;
@@ -180,94 +186,111 @@ header {
 }
 
 /* Resposinvidade */
-/* laptop width 1680 */
-
+/* Telas de 1680px */
 @media (max-width: 1680px) {
-    #box-footer {
-        margin-top: 14.2%;
-    }
+/* Rodapé do site */
+#box-footer {
+    margin-top: 14.2%;
+}
 }
 
-/* iPad width 1440 */
+/* Telas de 1440px */
 @media (max-width: 1440px) {
-    #box-footer {
-        margin-top: 7%;
-    }
+/* Rodapé do site */
+#box-footer {
+    margin-top: 7%;
+}
 }
 
+/* Telas de 1024px */
 @media (max-width:1024px) {
-    header #box-logo img {
-        position: relative;
-        width: 40px;
-        height: 40px;
-        top: 15px;
-    }
-
-    #container-box {
-        width: 380px;
-        height: 500px;
-    }
-    #container-box h1 {
-        font-size: 25px;
-    }
-    
-    #container-form label, input {
-        font-size: 14px;
-    }
-
-    #forgot-password a {
-        font-size: 14px;
-    }
-
-    #register-box span, a {
-        font-size: 14px;
-    }
-
-    #box-footer {
-        margin-top: 9.5%;
-    }
+/* Container da logo do site */
+header #box-logo img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 15px;
 }
 
-/* Smarthphone width 620 */
+/* Container do formúlario */
+#container-box {
+    width: 380px;
+    height: 500px;
+}
+
+/* titulo do formulario */
+#container-box h1 {
+    font-size: 25px;
+}
+
+/* input e label */
+#container-form label, input {
+     font-size: 14px;
+}
+
+/* Esqueceu a senha */
+#forgot-password a {
+    font-size: 14px;
+}
+
+#register-box span, a {
+    font-size: 14px;
+}
+
+/* Rodapé do site */
+ #box-footer {
+    margin-top: 9.5%;
+}
+}
+
+/* Telas de 620px */
 @media (max-width: 620px) {
-    #box-footer {
-        display: none;
-    }
+/* Rodapé do site */
+#box-footer {
+    display: none;
+}
 }
 
-/* Smarthphone width 500 */
+/* Telas de 500px */
 @media (max-width: 500px) {
-    header #box-logo img {
-        position: relative;
-        width: 50px;
-        height: 60px;
-        top: 15px;
-    }
+/* Container da logo do site */
+header #box-logo img {
+    position: relative;
+    width: 50px;
+    height: 60px;
+    top: 15px;
+}
 
-    #container-box {
-        margin-top: 2vh;
-        width: 300px;
-        height: 470px;
-    }
-    #container-box h1 {
-        font-size: 20px;
-    }
-    
-    #container-form label, input {
-        font-size: 12px;
-    }
+/* Container do formúlario */
+#container-box {
+    margin-top: 2vh;
+    width: 300px;
+    height: 470px;
+}
 
-    #forgot-password a {
-        font-size: 12px;
-    }
+/* titulo do formulario */
+#container-box h1 {
+    font-size: 20px;
+}
 
-    #register-box span, a {
-        font-size: 12px;
-    }
+/* input e label */
+#container-form label, input {
+    font-size: 12px;
+}
 
-    #box-footer {
-        display: none;
-    }
+/* Esqueceu a senha */
+#forgot-password a {
+    font-size: 12px;
+}
+
+#register-box span, a {
+    font-size: 12px;
+}
+
+/* Rodapé do site */
+#box-footer {
+    display: none;
+}
 
 }
 
